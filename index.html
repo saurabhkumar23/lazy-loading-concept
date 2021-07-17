@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
 </head>
 <body>
@@ -24,17 +25,35 @@
         <ul>
             <li>Only applies to images and iframes</li>
             
-            <li>just use the loading attribute with values (lazy or eager) to image and iframe tag</li>
-            <ul>
-                lazy: works great for lazy loading
-                eager: instructs the browser to load the specified content right away
-            </ul>
-        </ul>
-        <h2>The loading attribute gives us the option to 
+            <li>just use the loading attribute with values (lazy or eager) to image and iframe tag.
+                The loading attribute gives us the option to 
             delay off-screen images and iframes until 
             users scroll to their location on the page.
+            </li>
+            <ul>
+                <li>lazy: works great for lazy loading</li>
+                <li>eager: instructs the browser to load the specified content right away</li>
+            </ul>
+        </ul>
+        <h2>
         </h2>
         <a href="./native-method/index.html">TEST</a>
+        <h2>#2 Lazy Loading Using the Intersection Observer API</h2>
+        <ul>
+            <li>
+                The Intersection Observer API provides a way to asynchronously 
+            observe changes in the intersection of a target 
+            element with an ancestor element or with a top-level 
+            document’s viewport.
+            </li>
+            <li>
+                for images, the path is contained inside a data-src attribute, not a src attribute. 
+                The reason is that using src means the image would load right away, 
+                which is not what you want
+            </li>
+        </ul>
+        <a href="./intersection-observer-method/index.html">TEST</a>
+
     </div>
 </body>
 </html>
